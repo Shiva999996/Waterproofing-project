@@ -1,0 +1,73 @@
+.why{
+padding:80px 20px;
+background:#0b1a26;
+color:white;
+font-family:Arial, sans-serif;
+}
+
+.why-container{
+max-width:1100px;
+margin:auto;
+}
+
+.why-text{
+text-align:center;
+}
+
+.why-text h4{
+color:#ff8c00;
+margin-bottom:10px;
+}
+
+.why-text h2{
+font-size:36px;
+margin-bottom:20px;
+}
+
+.why-text p{
+color:#cfcfcf;
+max-width:700px;
+margin:auto;
+margin-bottom:50px;
+line-height:1.6;
+}
+
+/* FEATURES GRID */
+
+.why-features{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+}
+
+.feature{
+background:#132634;
+padding:30px;
+border-radius:8px;
+transition:0.3s;
+}
+
+.feature h3{
+font-size:40px;
+color:#ff8c00;
+margin-bottom:10px;
+}
+
+.feature p{
+color:#ddd;
+}
+
+/* hover */
+
+.feature:hover{
+transform:translateY(-5px);
+background:#ff8c00;
+}
+
+.feature:hover h3{
+color:white;
+}
+
+.feature:hover p{
+color:white;
+}
