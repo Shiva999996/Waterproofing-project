@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Contact.css";
+import contactBg from "../../assets/images/hero1.jpg";
 
 function Contact() {
 
@@ -12,7 +13,7 @@ function Contact() {
   });
 
   const handleChange = (e) => {
-    setFormData({...formData, [e.target.name]: e.target.value});
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
@@ -24,10 +25,26 @@ function Contact() {
   return (
     <div className="contact-page">
 
-      <div className="contact-container">
+      {/* CONTAINER 1 - FULL IMAGE */}
+      <section
+        className="contact-hero"
+        style={{ backgroundImage: `url(${contactBg})` }}
+      >
+        <div className="contact-overlay">
+          <h1>Contact Us</h1>
+        </div>
+      </section>
+
+      {/* CONTAINER 2 & 3 */}
+      <section className="contact-container">
+
+        {/* GET IN TOUCH */}
         <div className="contact-info">
           <h2>Get In Touch</h2>
-          <p>Have waterproofing problems? Contact our experts today.</p>
+
+          <p>
+            Have waterproofing problems? Contact our experts today.
+          </p>
 
           <div className="info-box">
             <p><strong>Phone:</strong> +91 9876543210</p>
@@ -36,7 +53,7 @@ function Contact() {
           </div>
         </div>
 
-        {/* Contact Form */}
+        {/* CONTACT FORM */}
         <div className="contact-form">
 
           <form onSubmit={handleSubmit}>
@@ -95,7 +112,7 @@ function Contact() {
 
         </div>
 
-      </div>
+      </section>
 
     </div>
   );

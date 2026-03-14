@@ -13,17 +13,27 @@ font-size:40px;
 margin-bottom:10px;
 }
 
+/* GRID */
+
 .projects-grid{
 display:grid;
 grid-template-columns:repeat(2,1fr);
 gap:30px;
 }
 
+/* CARD */
+
 .project-card{
 background:white;
 border-radius:10px;
 overflow:hidden;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
 .project-card img{
@@ -58,4 +68,76 @@ cursor:pointer;
 
 .project-content button:hover{
 background:#062a64;
+}
+
+
+/* ============================= */
+/* TABLET RESPONSIVE */
+/* ============================= */
+
+@media (max-width:1024px){
+
+.projects-page{
+padding:60px 8%;
+}
+
+.projects-header h1{
+font-size:34px;
+}
+
+.projects-grid{
+gap:25px;
+}
+
+}
+
+
+/* ============================= */
+/* MOBILE RESPONSIVE */
+/* ============================= */
+
+@media (max-width:768px){
+
+.projects-page{
+padding:50px 20px;
+}
+
+.projects-grid{
+grid-template-columns:1fr;
+gap:25px;
+}
+
+.projects-header h1{
+font-size:30px;
+}
+
+.project-card img{
+height:200px;
+}
+
+}
+
+
+/* ============================= */
+/* SMALL MOBILE */
+/* ============================= */
+
+@media (max-width:480px){
+
+.projects-header h1{
+font-size:26px;
+}
+
+.project-card img{
+height:180px;
+}
+
+.project-content{
+padding:16px;
+}
+
+.project-content button{
+width:100%;
+}
+
 }

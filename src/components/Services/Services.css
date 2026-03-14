@@ -53,3 +53,71 @@ margin-bottom:10px;
 font-size:14px;
 color:#555;
 }
+
+
+/* ============================= */
+/* TABLET RESPONSIVE */
+/* ============================= */
+
+@media (max-width:1024px){
+
+.services-container{
+grid-template-columns:repeat(2,1fr);
+}
+
+.services h2{
+font-size:34px;
+}
+
+}
+
+
+/* ============================= */
+/* MOBILE RESPONSIVE */
+/* ============================= */
+
+@media (max-width:768px){
+
+.services{
+padding:60px 20px;
+}
+
+.services-container{
+grid-template-columns:1fr;
+gap:25px;
+}
+
+.services h2{
+font-size:30px;
+}
+
+.service-card img{
+height:200px;
+}
+
+}
+
+
+/* ============================= */
+/* SMALL MOBILE */
+/* ============================= */
+
+@media (max-width:480px){
+
+.services h2{
+font-size:26px;
+}
+
+.service-card img{
+height:180px;
+}
+
+.service-content{
+padding:16px;
+}
+
+.service-content p{
+font-size:13px;
+}
+
+}

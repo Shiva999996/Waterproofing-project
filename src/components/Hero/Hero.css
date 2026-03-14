@@ -1,79 +1,217 @@
-.hero{
-width:100%;
-height:80vh;
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-display:flex;
-align-items:center;
-position:relative;
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 /* overlay */
-
-.hero-overlay{
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.55);
-display:flex;
-align-items:center;
-justify-content:flex-end;   /* moves text to right */
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 /* content */
-
-.hero-content{
-color:white;
-max-width:600px;
-margin-right:80px;
-text-align:left;
+.hero-content {
+  color: white;
+  max-width: 600px;
+  margin-right: 80px;
+  text-align: left;
 }
 
 /* heading */
-
-.hero-content h1{
-font-size:60px;
-line-height:1.2;
-font-weight:700;
-margin:0;
+.hero-content h1 {
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0;
 }
 
-.hero-content span{
-color:#ff8c00;
+.hero-content span {
+  color: #ff8c00;
 }
 
 /* paragraph */
-
-.hero-content p{
-margin-top:20px;
-font-size:18px;
-color:#e5e5e5;
+.hero-content p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #e5e5e5;
 }
 
 /* buttons */
-
-.hero-buttons{
-margin-top:30px;
-display:flex;
-gap:20px;
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* ensures buttons wrap on small screens or large widths */
 }
 
-.inspect-btn{
-background:#ff8c00;
-border:none;
-padding:14px 28px;
-color:white;
-font-weight:600;
-border-radius:8px;
-cursor:pointer;
+.inspect-btn {
+  background: #ff8c00;
+  border: none;
+  padding: 14px 28px;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.whatsapp-btn{
-background:#25D366;
-border:none;
-padding:14px 28px;
-color:white;
-font-weight:600;
-border-radius:8px;
-cursor:pointer;
+.whatsapp-btn {
+  background: #25D366;
+  border: none;
+  padding: 14px 28px;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* =============================
+   TABLET RESPONSIVE
+============================= */
+@media (max-width: 1024px) {
+  .hero-content {
+    margin-right: 40px;
+    max-width: 500px;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    gap: 18px;
+  }
+}
+
+/* =============================
+   MOBILE RESPONSIVE
+============================= */
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .hero-overlay {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin-right: 0;
+    padding: 0 20px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .inspect-btn,
+  .whatsapp-btn {
+    padding: 12px 22px;
+    font-size: 14px;
+  }
+}
+
+/* =============================
+   SMALL MOBILE
+============================= */
+@media (max-width: 480px) {
+  .hero {
+    height: 65vh;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .inspect-btn,
+  .whatsapp-btn {
+    width: 100%;
+  }
+}
+
+/* =============================
+   LARGE SCREENS (≥1440px)
+============================= */
+@media (min-width: 1400px) {
+  .hero-content {
+    max-width: 800px;
+    margin-right: 100px;
+  }
+
+  .hero-content h1 {
+    font-size: 70px;
+  }
+
+  .hero-content p {
+    font-size: 20px;
+  }
+
+  .hero-buttons {
+    gap: 30px;
+  }
+}
+
+/* =============================
+   ULTRA-LARGE SCREENS (≥1600px)
+============================= */
+@media (min-width: 1600px) {
+  .hero-content {
+    max-width: 900px;
+    margin-right: 120px;
+  }
+
+  .hero-content h1 {
+    font-size: 80px;
+  }
+
+  .hero-content p {
+    font-size: 22px;
+  }
+
+  .hero-buttons {
+    gap: 35px;
+  }
+
+  .inspect-btn,
+  .whatsapp-btn {
+    padding: 16px 32px;
+    font-size: 16px;
+  }
 }

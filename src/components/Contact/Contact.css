@@ -1,33 +1,71 @@
 .contact-page{
-padding:80px 10%;
-background:#f5f5f5;
-font-family:Arial;
+font-family: Arial;
 }
+
+/* HERO IMAGE */
+
+.contact-hero{
+height:500px;
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+}
+
+/* OVERLAY */
+
+.contact-overlay{
+background:rgba(0,0,0,0.5);
+width:100%;
+height:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.contact-overlay h1{
+color:white;
+font-size:40px;
+}
+
+/* SECOND SECTION */
 
 .contact-container{
 display:flex;
-gap:50px;
-background:white;
-padding:40px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+padding:80px 10%;
+gap:40px;
+background:#f5f5f5;
 }
+
+/* INFO */
 
 .contact-info{
 flex:1;
+background:white;
+padding:40px;
+border-radius:8px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
 .contact-info h2{
-font-size:32px;
-margin-bottom:20px;
+font-size:30px;
+margin-bottom:15px;
 }
 
 .info-box p{
 margin:10px 0;
 }
 
+/* FORM */
+
 .contact-form{
 flex:1;
+background:white;
+padding:40px;
+border-radius:8px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
 .contact-form form{
@@ -57,4 +95,80 @@ font-size:16px;
 
 .contact-form button:hover{
 background:#062a64;
+}
+
+
+/* ============================= */
+/* TABLET RESPONSIVE */
+/* ============================= */
+
+@media (max-width:1024px){
+
+.contact-container{
+flex-direction:column;
+}
+
+}
+
+
+/* ============================= */
+/* MOBILE RESPONSIVE */
+/* ============================= */
+
+@media (max-width:768px){
+
+.contact-hero{
+height:350px;
+}
+
+.contact-overlay h1{
+font-size:32px;
+}
+
+.contact-container{
+padding:40px 20px;
+gap:30px;
+}
+
+.contact-info{
+padding:30px;
+}
+
+.contact-form{
+padding:30px;
+}
+
+.contact-info h2{
+font-size:26px;
+}
+
+}
+
+
+/* ============================= */
+/* SMALL MOBILE */
+/* ============================= */
+
+@media (max-width:480px){
+
+.contact-overlay h1{
+font-size:26px;
+}
+
+.contact-info h2{
+font-size:22px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select{
+font-size:13px;
+padding:10px;
+}
+
+.contact-form button{
+font-size:14px;
+padding:10px;
+}
+
 }

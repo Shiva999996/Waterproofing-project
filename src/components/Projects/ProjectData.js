@@ -1,33 +1,40 @@
+// ProjectData.js
+import roof from "../../assets/images/bathroom.jpg";
+import terrace from "../../assets/images/terrace.jpg";
+import wall from "../../assets/images/watertank.jpg";
+import watertank from "../../assets/images/basement.jpg";
+
 const projects = [
   {
     id: 1,
-    title: "Roof Waterproofing",
+    title: "Bathroom Waterproofing",
     location: "Pune",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e",
-    description: "Complete roof waterproofing treatment for residential building."
+    image: roof,
+    description: "Complete Bathroom waterproofing treatment for residential building."
   },
 
   {
     id: 2,
     title: "Terrace Waterproofing",
     location: "Mumbai",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd",
+    image: terrace,
     description: "Terrace leakage repair using advanced waterproof coating."
   },
 
   {
     id: 3,
-    title: "External Wall Coating",
+    title: "Water tank Waterproofing",
     location: "Andheri East, Mumbai",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
-    description: "External Wall Coating."
+    image: wall,
+    description: "Water tank Waterproofing"
   },
 
   {
     id: 4,
-    title: "Water Tank Treatment",
+    title: "Basement Waterproofing",
     location: "Kalyan",
-    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    image: watertank,
+    description: "Basement waterproofing and treatment."
   }
 ];
 

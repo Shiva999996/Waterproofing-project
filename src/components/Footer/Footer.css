@@ -64,3 +64,59 @@ color:#ccc;
 .footer a:hover{
 color:#ff7a00;
 }
+
+
+/* ============================= */
+/* TABLET RESPONSIVE */
+/* ============================= */
+
+@media (max-width:1024px){
+
+.footer-container{
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+}
+
+}
+
+
+/* ============================= */
+/* MOBILE RESPONSIVE */
+/* ============================= */
+
+@media (max-width:768px){
+
+.footer-container{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.footer{
+padding-top:40px;
+}
+
+.footer-bottom{
+font-size:13px;
+padding:15px;
+}
+
+}
+
+
+/* ============================= */
+/* SMALL MOBILE */
+/* ============================= */
+
+@media (max-width:480px){
+
+.footer-section h2,
+.footer-section h3{
+font-size:18px;
+}
+
+.footer-section p,
+.footer-section ul li{
+font-size:13px;
+}
+
+}

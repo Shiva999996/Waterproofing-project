@@ -27,9 +27,10 @@ function App() {
           element={
             <>
               <Hero />
+              <Projects/>
               <Services />
               <Process />
-               <Projects/>
+               
               <About />
               <WhyChooseUs />
             </>

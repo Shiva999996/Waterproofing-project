@@ -1,32 +1,40 @@
 import React from "react";
 import "./About.css";
+import aboutBg from "../../assets/images/hero1.jpg";
 
 function About() {
   return (
     <div className="about-page">
-<hr color="black" />
-      <section className="about-hero">
-        <h1>About Us</h1>
-        <p>
-          Building Trust, One Project at a Time
-        </p>
+
+      {/* HERO SECTION WITH FULL BACKGROUND IMAGE */}
+      <section
+        className="about-hero"
+        style={{ backgroundImage: `url(${aboutBg})` }}
+      >
+        <div className="about-overlay">
+          <h1>About Us</h1>
+          <p>Building Trust, One Project at a Time</p>
+        </div>
       </section>
 
-    
+      {/* ABOUT CONTENT */}
       <section className="about-container">
 
         <div className="about-text">
           <h2>Our Story</h2>
 
           <p>
-           Established in 2015, WaterProof Construction Solutions has been at the forefront of providing premium waterproofing services across Mumbai and surrounding areas. With over 10 years of experience, we have successfully completed more than 1000 residential and commercial projects.
+            Established in 2015, WaterProof Construction Solutions has been at
+            the forefront of providing premium waterproofing services across
+            Mumbai and surrounding areas. With over 10 years of experience,
+            we have successfully completed more than 1000 residential and
+            commercial projects.
 
-Our journey began with a simple mission: to protect properties from water damage using the best materials and techniques available in the industry. Today, we are proud to be one of the most trusted names in waterproofing solutions.
-
-We believe in transparency, quality, and customer satisfaction. Every project we undertake comes with a written warranty and the assurance of using only branded, certified materials.
+            Our journey began with a simple mission: to protect properties
+            from water damage using the best materials and techniques
+            available in the industry. Today, we are proud to be one of the
+            most trusted names in waterproofing solutions.
           </p>
-
- 
         </div>
 
         <div className="about-image">
@@ -38,6 +46,7 @@ We believe in transparency, quality, and customer satisfaction. Every project we
 
       </section>
 
+      {/* MISSION SECTION */}
       <section className="mission-section">
 
         <div className="mission-box">
@@ -59,8 +68,8 @@ We believe in transparency, quality, and customer satisfaction. Every project we
         <div className="mission-box">
           <h3>Our Core Values</h3>
           <p>
-            Quality workmanship, customer trust, innovation, and commitment to
-            completing every project with precision.
+            Quality workmanship, customer trust, innovation, and commitment
+            to completing every project with precision.
           </p>
         </div>
 
